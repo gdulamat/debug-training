@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    <p>Podane liczby powinny zostać dodane. Dodanie liczb wymaga zaznaczenia zgody. Zamiast wyniku skrypt wyrzuca NaN</p>
+    <form id="form1">
+        <label for="firstNum"></label>
+        <input name="firstNum" type="number">
+        <label for="secondNum"></label>
+        <input name="secondNum" type="number">
+        <input type="checkbox" name="agreement" required value="1">
+        <button type="submit">Sum</button>
+    </form>
+    <p id="agreement"></p>
+    <p id="score"></p>
+</body>
+<script src="script.js"></script>
+</html>

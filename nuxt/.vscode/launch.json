@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "nuxt: chrome",
+      "webRoot": "${workspaceFolder}",
+      "sourceMapPathOverrides": {
+        "webpack:///*": "${workspaceRoot}/*"
+      },
+      "url": "http://localhost:3000",
+      "breakOnLoad": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "nuxt: server",
+      "args": ["dev"],
+      "outputCapture": "std",
+      "osx": {
+        "program": "${workspaceFolder}/node_modules/.bin/nuxt"
+      },
+      "linux": {
+        "program": "${workspaceFolder}/node_modules/.bin/nuxt"
+      },
+      "windows": {
+        "program": "${workspaceFolder}/node_modules/nuxt/bin/nuxt.js"
+      }
+    }
+  ]
+}

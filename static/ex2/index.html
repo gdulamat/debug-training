@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input[type=number] {
+            width: 50px;
+        }
+        button {
+            margin: 10px 0 0;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <p>Kalkulator powinien mnożyć podane liczby. Trzecia i czwarta liczba powinny być brane pod uwagę tylko gdy checkbox przy nich jest aktywny. Jak wpisuję 1,2,3,4 i zaznaczam checkboxyto wynik jest 6, a powinien być 24 (1*2*3*4)</p>
+    <div id="form1">
+        (
+        <input name="n1" type="number" value="1">
+        )
+        *
+        (
+        <input name="n2" type="number" value="2">
+        )
+        *
+        (
+        <input name="n3" type="number" value="3">
+        <input id="c3" type="checkbox" name="n3Cancel">
+        )
+        *
+        (
+        <input name="n4" type="number" value="4">
+        <input id="c4" type="checkbox" name="n4Cancel">
+        )
+        =
+        <span id="score"></span>
+        <div>
+            <button>Calc</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
